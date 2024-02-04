@@ -1,0 +1,57 @@
+@font-face {
+    font-family: alagard;
+    src: url("assets/alagard.ttf");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#gameScreen{
+    display: none;
+}
+
+#initialScreen{
+    width: 1024px;
+    height: 576px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.Title{
+    font-family: alagard;
+    color: white;
+    font-size: 150px;
+}
+
+.Alagard{
+    font-family: alagard;
+}
+
+.Menu-Button{
+    border: 0px;
+    border-radius: 0;
+    font-size: 50px;
+    max-width: 300px;
+    padding: 5px 2px;
+}
+
+.Menu-Input{
+    height: 100%;
+    font-size: 20px;
+}

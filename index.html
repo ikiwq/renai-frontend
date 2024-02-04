@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<title>Renai</title>
+</head>
+<body>
+	<div id="initialScreen" style="position: relative; z-index: 10;">
+		<div style="display: flex; flex-direction: column; width: 100%; align-items: center; justify-content: center; line-height: 3px; position: absolute;">
+			<h1 class="Title">Renai</h1>
+			<div style="display: flex; align-items: center; justify-content: center; gap: 15px">
+				<button class="Menu-Button Alagard" id="newGameButton">Create new Game</button>
+				<p style="color: black; font-size: 30px;" class="Alagard">or</p>
+				<div style="display: flex; flex-direction: column; gap: 5px; height: 100%;">
+					<input class="Alagard Menu-Input" type="text" placeholder="Enter Game Code" id="gameCodeInput"/>
+					<button class="Menu-Button Alagard" id="joinGameButton">Join Game</button>
+				</div>
+			</div>
+		</div>
+		<img src="assets/bg/bg.png">
+	</div>
+
+	<div id="gameScreen" style="position:relative;">
+		<div style="position: absolute; display: flex; width: 1024px; align-items: center;  padding: 20px;">
+
+			<div style="position: relative; height: 30px; width: 100%; display: flex; justify-content: flex-end;">
+				<div style="background-color: yellow; height: 30px; width: 100%;"></div>
+				<div id="player1Health" style=" position: absolute; background-color: blue; height: 30px; top:0; bottom: 0; left: 0; right: 0;"></div>	
+			</div>
+
+			<div id="Timer" class="Alagard" style="background-color: red; color: white; font-size: 30px; width: 100px; height: 100px; flex-shrink: 0; display:flex; align-items: center; justify-content: center;"></div>
+
+			<div style="position: relative; height: 30px; width: 100%;">
+				<div style="background-color: yellow; height: 30px;"></div>
+				<div id="player2Health" style=" position: absolute; background-color: blue; height: 30px; top:0; bottom: 0; left: 0; right: 0;"></div>	
+			</div>
+
+		</div>
+		<div id="outcome" style="position: absolute; color: white; align-items: center; justify-content: center; top:0; bottom: 0;left: 0; right: 0; display: none;">TIE!</div>
+		<div id="gameCode"style="position: relative; justify-content: center; align-items: center; width: 100%; height: 100%; display: flex;">
+			<div style="position: absolute;">
+			<h1 style="text-align: center; color: white;" class="Alagard">Your game code is: <span id="gameCodeDisplay"></span></h1>
+			</div>
+			<img src="assets/bg/bg.png" style=" width: 100%; height: 100%; object-fit: cover;">
+		</div>
+		<canvas></canvas>
+	<div>
+
+	<script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
+	<script src="classes.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>
