@@ -1,5 +1,6 @@
 # Renai Frontend
 Welcome to the Renai! Renai is a web-based game where you can join or create games. This repository contains the frontend codebase for the Renai project.
+The server codebase is available [here](https://github.com/ikiwq/renai-server).
 ## Getting Started
 To get started with the Renai frontend, follow these steps:
 Clone this repository to your local machine:
